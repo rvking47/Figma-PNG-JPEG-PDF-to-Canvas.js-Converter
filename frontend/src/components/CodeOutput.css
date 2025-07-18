@@ -1,0 +1,94 @@
+/* CodeOutput.css */
+.code-output-container {
+  margin: 2rem 0;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.code-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #24292e;
+}
+
+.code-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.copy-btn,
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #24292e;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover,
+.export-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.copy-btn:disabled,
+.export-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.copy-btn.copied {
+  background-color: #e6ffed;
+  border-color: #34d058;
+  color: #22863a;
+}
+
+.export-btn {
+  background-color: #f0f7ff;
+  border-color: #c8e1ff;
+  color: #0366d6;
+}
+
+.export-btn:hover {
+  background-color: #e1eeff;
+}
+
+.copy-btn .icon,
+.export-btn .icon {
+  font-size: 0.9em;
+}
+
+.code-content {
+  background-color: #ffffff;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.code-content pre {
+  margin: 0;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #24292e;
+  white-space: pre-wrap;
+}
+
+.code-content code {
+  display: block;
+}
